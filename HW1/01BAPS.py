@@ -57,17 +57,17 @@ t5RemainTask = 0
 # Hyper Parameter Input (Aperiodic Task)
 print('\nPlease input Aperiodic task1')
 AP1ComputeTime, AP1ArrivalTime = map(int, input(
-    'Aperiodic task1 computation time, period : ').split())
+    'Aperiodic task1 computation time, arrival time : ').split())
 AP1RemainTask = 0
 
 print('Please input Aperiodic task2')
 AP2ComputeTime, AP2ArrivalTime = map(int, input(
-    'Aperiodic task2 computation time, period : ').split())
+    'Aperiodic task2 computation time, arrival time : ').split())
 AP2RemainTask = 0
 
 print('Please input Aperiodic task3')
 AP3ComputeTime, AP3ArrivalTime = map(int, input(
-    'Aperiodic task3 computation time, period : ').split())
+    'Aperiodic task3 computation time, arrival time : ').split())
 AP3RemainTask = 0
 
 # Hyper Period Calculating

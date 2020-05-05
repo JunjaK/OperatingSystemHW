@@ -70,11 +70,11 @@ Please input Periodic task5
 Periodic task5 computation time, period : 5 60
 
 Please input Aperiodic task1
-Aperiodic task1 computation time, period : 2 7
+Aperiodic task1 computation time, arrival time : 2 7
 Please input Aperiodic task2
-Aperiodic task2 computation time, period : 1 10
+Aperiodic task2 computation time, arrival time : 1 10
 Please input Aperiodic task3
-Aperiodic task3 computation time, period : 1 29
+Aperiodic task3 computation time, arrival time : 1 29
 
 Periodic task's Hyper Period : 60
 
@@ -106,11 +106,11 @@ Please input Periodic task5
 Periodic task5 computation time, period : 5 60
 
 Please input Aperiodic task1
-Aperiodic task1 computation time, period : 2 7
+Aperiodic task1 computation time, arrival time : 2 7
 Please input Aperiodic task2
-Aperiodic task2 computation time, period : 1 10
+Aperiodic task2 computation time, arrival time : 1 10
 Please input Aperiodic task3
-Aperiodic task3 computation time, period : 1 29
+Aperiodic task3 computation time, arrival time : 1 29
 Please input Polling server task
 Polling capacity, period : 1 5
 

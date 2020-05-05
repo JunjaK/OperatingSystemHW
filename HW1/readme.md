@@ -40,6 +40,7 @@
 - Periodic task 5개를 입력합니다. (Computation time, Period 순으로 입력) 
 - Aperiodic task 3개를 입력합니다. (Computation time, Arrival Time 순으로 입력)
 - Polling Server 정보를 입력합니다. (Capacity, Period 순으로 입력)
+- 결과를 확인합니다.
 #### ps. sh init이 제대로 실행 안될 경우, 아래의 명령어를 차례로 입력해주십시오.
 ```
 source env/bin/activate
@@ -126,3 +127,9 @@ AP3 Delay Time :  1
 
 Aperiodic Proccess Scheduling Average Delay Time :  6.333333333333333
 ``` 
+
+## 생성된 Gantt Chart
+#### 1. Background APS
+![BackgroundAPS](https://user-images.githubusercontent.com/30404630/81063590-16545e80-8f13-11ea-8694-b8e2c64188c5.png)
+#### 2. Polling Server APS
+![PollingServerAPS](https://user-images.githubusercontent.com/30404630/81063595-17858b80-8f13-11ea-88c0-a297ffd9475d.png)

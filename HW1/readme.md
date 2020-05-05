@@ -1,7 +1,7 @@
-# 프로그램 설명입니다.
+# Documentation And Results
 
 ## 사용한 자료구조
-#### 프로그램의 구조에 관해서는 주석으로 설명했습니다.
+#### 프로그램의 구조에 관해서는 소스코드에서 주석으로 설명했습니다.
 #### 사용한 주요 변수 설명 (설명에 없는 변수는 단순 계산을 위해 선언한 것입니다.)
 | name | Description                                                      | Type           |
 | --------- | ---------------------------------------------------------------- | -------------- |
@@ -16,9 +16,6 @@
 | HyperPeriod | Periodic Task들의 Hyper Period를 저장하는 변수입니다. | int |
 | taskList | 각 시간별, Task들이 작업을 수행한 시간을 저장해 놓은 리스트입니다.  | array/string |
 | APSaverageDelayTime | Aperiodic Process Scheduling의 평균 지연 시간을 계산한 결과를 저장한 변수입니다.  | float |
-
-
-
 
 ## 가정사항
 #### 1. Periodic task는 5개만을 입력 받습니다. (Gantt chart 만들기 위해 고정할 필요가 있습니다. - 색 지정에 관한 문제)

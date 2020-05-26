@@ -33,7 +33,7 @@
 #### 4. 값을 입력시 사용자는 반드시 숫자를 입력해야합니다. (공백이나 문자열 불가. int 변환이 안됩니다.)
 
 ## 사용방법 및 환경
-- 개발환경 : python 3.8.2, WSL2(window subsystem for linux2)
+- 개발환경 : python 3.8.2, VSCode 1.45.1, WSL2(window subsystem for linux2)
 - 입력의 경우 구분은 공백으로 합니다.
 - 코드 실행
 ```

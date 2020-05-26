@@ -1,6 +1,7 @@
 # 가정사항
 # 사용자가 초기 값을 올바르게 줌 
 # (초기 Allocation 값, Resource Type, Max Resource를 계산이 불가능하게 주지 않음)
+# 입력 값은 무조건 숫자
 
 import copy
 
@@ -111,14 +112,16 @@ def main():
     '''
     print("\n###### 지금부터 Banker's Algorithm을 시작합니다. ######\n")
     while True:
+        # System이 Safe state인 경우 프로그램 종료.
+        if(checkSafeState):
+            break
+
         print("프로그램 종료: 0 | Resource Request: 1")
         userSelect = int(input('원하는 항목을 입력해주세요 : '))
         requestProcessNum = 0
         allocateR = [[] for x in range(0, processNum)]
-        
-        if(checkSafeState == True):
-            break
-        elif(userSelect == 0):
+    
+        if(userSelect == 0):
             print('프로그램을 종료합니다. \n')
             break
 
@@ -194,7 +197,7 @@ def main():
                         print('할당할 자원이 Available보다 큽니다. 작업을 보류합니다.\n')
                 else:
                     allocateR[requestProcessNum] = []
-                    print('%d번째 프로세스의 need보다 큰 자원을 할당할 수 없습니다. 다시 자원을 입력해주세요.\n')
+                    print('%d번째 프로세스의 need보다 큰 자원을 할당할 수 없습니다. 다시 자원을 입력해주세요.\n'%(requestProcessNum))
             
             
         else:

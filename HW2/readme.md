@@ -30,6 +30,7 @@
 #### 1. Process는 최대 10개를 입력 받습니다.
 #### 2. Resource는 최대 5개를 입력 받습니다.
 #### 3. 사용자는 초기 Allocation 값, Resource Type, Max Resource를 계산이 불가능하게 입력하지 않습니다.
+#### 4. 값을 입력시 사용자는 반드시 숫자를 입력해야합니다. (공백이나 문자열 불가. int 변환이 안됩니다.)
 
 ## 사용방법 및 환경
 - 개발환경 : python 3.8.2, WSL2(window subsystem for linux2)
@@ -67,15 +68,13 @@ process 3 :  [0, 1, 1]
 process 4 :  [4, 3, 1]
 
 Available :  [3, 3, 2]
+
 ###### 지금부터 Banker's Algorithm을 시작합니다. ######
 
 프로그램 종료: 0 | Resource Request: 1
 원하는 항목을 입력해주세요 : 1
 작업을 할당할 프로세스를 선택해주세요(0 ~ 4) : 1
 할당할 리소스 입력(3개) : 1 0 2
-1 [[7, 4, 3], [1, 2, 2], [6, 0, 0], [0, 1, 1], [4, 3, 1]]
-2 [1, 0, 2]
-3 1 1
 
 ### Need ###
 process 0 :  [7, 4, 3]
@@ -113,22 +112,30 @@ process 3 : Complete!
 process 4 : Complete!
 
 Available :  [7, 4, 5]
-완료된 프로세스 :  1 3 4 
 
+완료된 프로세스 :  1 3 4
 작업을 할당할 프로세스를 선택해주세요(0 ~ 4) : 0
-할당할 리소스 입력(3개) : 2 0 1
-1 [[7, 4, 3], [], [6, 0, 0], [], []]
-2 [2, 0, 1]
-3 2 7
+할당할 리소스 입력(3개) : 7 5 5
+0번째 프로세스의 need보다 큰 자원을 할당할 수 없습니다. 다시 자원을 입력해주세요.
+
+
+완료된 프로세스 :  1 3 4
+작업을 할당할 프로세스를 선택해주세요(0 ~ 4) : 1
+완료된 프로세스에 작업을 할당할 수 없습니다.
+
+
+완료된 프로세스 :  1 3 4
+작업을 할당할 프로세스를 선택해주세요(0 ~ 4) : 0
+할당할 리소스 입력(3개) : 4 1 2
 
 ### Need ###
-process 0 :  [5, 4, 2]
+process 0 :  [3, 3, 1]
 process 1 : Complete!
 process 2 :  [6, 0, 0]
 process 3 : Complete!
 process 4 : Complete!
 
-Available :  [5, 4, 4]
+Available :  [3, 3, 3]
 
 ### Safety Algorithm Running! ###
 Process 0 is released
@@ -140,11 +147,8 @@ Process 2 is safe state
 Work : [10, 5, 7] 
 
 
- This System is safe state.
+This System is safe state.
 프로세스가 모두 수행됐으므로, 프로그램을 종료합니다!
 
 ----- Safe Sequence :  [1, 3, 4, 0, 2]  -----
-프로그램 종료: 0 | Resource Request: 1
-원하는 항목을 입력해주세요 : 0
-프로그램을 종료합니다. 
 ```

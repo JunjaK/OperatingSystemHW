@@ -109,7 +109,7 @@ def main():
     '''
     알고리즘 시작
     '''
-    print("###### 지금부터 Banker's Algorithm을 시작합니다. ######\n")
+    print("\n###### 지금부터 Banker's Algorithm을 시작합니다. ######\n")
     while True:
         print("프로그램 종료: 0 | Resource Request: 1")
         userSelect = int(input('원하는 항목을 입력해주세요 : '))
@@ -161,9 +161,7 @@ def main():
                         if(len(allocateR[i]) > 0):
                             requestProcessNum = i
                             break
-                print(1, Need)
-                print(2, allocateR[requestProcessNum])
-                print(3, allocateR[requestProcessNum][0], Need[requestProcessNum][0])
+
                 # need, available 체크  
                 for i in range(0, resourceNum):
                     if(allocateR[requestProcessNum][i] > Need[requestProcessNum][i]):

@@ -70,8 +70,8 @@ def main():
     초기 세팅
     '''
     # 프로세스 및 리소스 개수 입력
-    processNum = int(input('프로세스의 수를 입력해주세요(최대 10개) : '))
-    resourceNum = int(input('리소스의 수를 입력해주세요(최대 5개) : '))
+    processNum = int(input('프로세스의 수를 입력해주세요(최소 2개, 최대 10개) : '))
+    resourceNum = int(input('리소스의 수를 입력해주세요(최소 2개, 최대 5개) : '))
     completedProcess = []
     checkSafeState = False
     # 리소스 정보 입력
@@ -189,6 +189,7 @@ def main():
                             print('프로세스가 모두 수행됐으므로, 프로그램을 종료합니다!')
                             break
                         else:
+                            print('\n----- Safety Sequence : ', completedProcess,' -----')
                             print('아직 완료되지 않은 프로세스가 있으므로 프로그램을 다시 시작합니다!')
                             allocateR[requestProcessNum] = []
                             Available = copy.deepcopy(resource)
@@ -203,7 +204,7 @@ def main():
         else:
             print('잘못된 요청입니다. 다시 입력해주세요.\n')
 
-        print('\n----- Safe Sequence : ', completedProcess,' -----')
+        print('\n----- Safety Sequence : ', completedProcess,' -----')
 
 
 if __name__ == '__main__':

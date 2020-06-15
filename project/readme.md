@@ -1,5 +1,5 @@
 
-# Term Project #3 Memory management (Documentation And Results)
+# Term Project GetBlock Algorithm (Documentation And Results)
 ## 사용한 자료구조
 #### 프로그램의 구조에 관해서는 소스코드에서 주석으로 설명했습니다.
 #### 사용한 주요 변수 설명 
